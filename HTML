@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <title>Did-Good</title>
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style type="text/css">
+  	body{font-family: Helvetica;
+  		 text-align: center;        
+         }
+    .home, .send, .notify {background-repeat: no-repeat;
+    	                   background-position: center;
+    	                   background-size: cover;
+    	                   width: 45px;
+    	                   height: 45px;
+    	                   display: inline-block;
+    	                   }
+    .toolbar{ width: 200px;
+              height: 50px;
+              margin: auto;
+              text-align: center;
+              display: block; 
+             }	                   
+
+    .home{background-image: url(xxx.png);}
+    .send{background-image: url(xxxxx.png);}
+    .notify{background-image: url(xxxxxx.png);}
+    .close-button{float:right;
+		          width:20px;
+		          height:20px;
+		          line-height:20px;
+		          display:block;
+		          font-size: 24px;
+		          font-weight: bold;
+		          text-align:center;
+                  }
+    .close-button:hover{cursor:pointer;
+	                   }
+	#collapse-btn{
+		          float:left;
+		          width:30px;
+		          height:30px;
+		          margin-left:10px;
+	             }
+	div.modal{
+	          z-index:3;
+	          position: fixed;
+	          left: 0;
+	          top: 0;
+	          width: 100%;
+	          height: 100%;
+		      padding-top: 0;
+	          display: none;
+		      background-color :rgba(0,0,0,0.4);
+	          overflow: auto;
+	         } 
+	div.modal-content{
+					  margin: 0;
+					  padding: 0;
+					  width: 300px;
+					  height:100%;
+					  position: relative;
+					  outline: 0;
+    				  border-radius: 5px;
+					  background-color: #333333;
+					  color: white
+					  }   
+	.header-info{
+		height:30px;
+	}
+	div.modal-content a{color: white;	                    
+	                    text-decoration:none;
+	                    }		
+	.avatar{padding: 0;margin: 0;width: 150px;height: 150px}
+	.modal-body p,h4 {text-align: left; padding: 5px}             		           
+  </style>
+</head>
+<body>
+   <div class="header">
+	<div class="info">
+		<button type="button" id="collapse-btn" onclick="document.getElementById('chich5').style.display='block'">
+			<i class="fa fa-navicon"></i>
+		</button>	
+	</div>
+    <h3>Welcome back</h3>
+    <div class="toolbar">
+	  
+	  <div class="home"></div>
+	  <div class="send"></div>
+	  <div class="notify"></div>
+	 </div>
+   </div>
+   <div class="body">
+    <div class="container" style="width: 750px">
+     <div class="well" id="chich1" style="padding: 10px; 
+                              margin: 10px 0; 
+                              text-align: left; 
+                              height: 100px; 
+                              background-color: white"><span class="close-button" onclick="document.getElementById('chich1').style.display='none'">&times;</span><font size="1px">Tue 17 January</font><br>Did-Good enables you to provide immediate feedback to others. You can use it anytime; whether it's after a meeting, event or any type of situation where feedback is appropriate and can help others improve.
+     </div>
+     <div class="well" id="chich2" style="padding: 10px; 
+                              margin: 10px 0; 
+                              text-align: left; 
+                              height: 70px; 
+                              background-color:#bfbfbf"><span class="close-button" onclick="document.getElementById('chich2').style.display='none'">&times;</span><font size="1px">Tue 17 January</font><br>Feedback exchange helps identify, develop and support each other's personal and professional growth.
+     </div>
+     <div class="well" id="chich3" style="padding: 10px; 
+                              margin: 10px 0; 
+                              text-align: left; 
+                              height: 70px; 
+                              background-color: white"><span class="close-button" onclick="document.getElementById('chich3').style.display='none'">&times;</span><font size="1px">Tue 17 January</font><br>Feedback should always be honest, non-offensive, constructive and ethical.</div>
+     <div class="well" id="chich4" style="padding: 10px; 
+                              margin: 10px 0; 
+                              text-align: left; 
+                              height: 80px; 
+                              background-color:#bfbfbf"><span class="close-button" onclick="document.getElementById('chich4').style.display='none'">&times;</span><font size="1px">Tue 17 January</font><br>The safety and security of your personal data is very important to us. Please refer to the FAQ section for more information.</div>
+    </div>
+     
+   </div>
+   <div class="modal" id="chich5">
+		<div class="modal-content">
+			<div class="header-info">
+				<span class="close-button" onclick="document.getElementById('chich5').style.display='none' ">&times;</span>				
+			</div>
+			<div class="modal-body">
+			   <div class="avatar">
+			   <img style="width: 150px;height: 150px" src="xxx.png">
+			   </div>
+
+			   <h4>Hùng Hiệp</h4>
+				<p><a href="#">Home</a></p>
+				<p><a href="#">Add Email</a></p>
+				<p><a href="#">FAQ</a></p>
+				<p><a href="#">Rate Us</a></p>
+				<p><a href="#">Logout</a></p>
+				<p style="margin-top: 50px; text-align: left"><font color="#b3b3b3">Version: 1.0.0</font></p>
+			</div>
+		</div>
+	</div>		
+   
+
+</body>	
